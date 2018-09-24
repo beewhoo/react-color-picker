@@ -17,7 +17,6 @@ class App extends React.Component {
 
   generateColor () {
     let hex = '#' +  Math.random().toString(16).substr(-6);
-    console.log(hex)
     return hex
   }
 
