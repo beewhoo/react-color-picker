@@ -33,7 +33,8 @@ class App extends React.Component {
   render () {
     return (
       <div>
-      <h1 className='header'> Color Picker </h1>
+      <h1 className='header'> <span>Random Color</span> Generator </h1>
+      <p>Click on any color</p>
       <div className="color-container">
         { this.state.colors.map((color, index) => <Color key={`color-${index}`} index={index} update={this.updateColor.bind(this)} hexCode={color.hexCode}></Color>) }
       </div>
