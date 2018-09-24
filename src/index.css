@@ -33,9 +33,19 @@
   text-align: center;
   margin: 0;
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #E3F94A;
+    -webkit-animation: random 10s infinite;
+    animation: random 10s infinite;
+}
+@keyframes  random {
+   15% { background-color: #117EDE; }
+   30% { background-color: #46F9CD }
+   45% { background-color: #CBB1F3; }
+   60% { background-color: #FB060E; }
+   75% { background-color: #E37D62; }
 
 }
+
 
 .header span {
   font-weight: 200;
@@ -44,6 +54,7 @@
 p {
   margin: 0;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .colorcode::-moz-selection {

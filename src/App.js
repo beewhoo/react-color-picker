@@ -10,7 +10,7 @@ class App extends React.Component {
       colorsNum: 8,
       colors: []
     };
-    for (let i = 0; i < this.state.colorsNum; i +=1) {
+    for (let i = 0; i < this.state.colorsNum; i++) {
       this.state.colors.push({hexCode: this.generateColor()});
     }
   }
