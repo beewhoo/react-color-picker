@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor () {
     super();
     this.state = {
-      colorsNum: 5,
+      colorsNum: 8,
       colors: []
     };
     for (let i = 0; i < this.state.colorsNum; i +=1) {
@@ -17,7 +17,9 @@ class App extends React.Component {
   }
 
   generateColor () {
-    return '#' +  Math.random().toString(16).substr(-6);
+    let hex = '#' +  Math.random().toString(16).substr(-6);
+    console.log(hex)
+    return hex
   }
 
   updateColor (index) {
