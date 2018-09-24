@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Color from './Color'
 import './App.css';
 
@@ -33,8 +32,11 @@ class App extends React.Component {
 
   render () {
     return (
+      <div>
+      <h1 className='header'> Color Picker </h1>
       <div className="color-container">
         { this.state.colors.map((color, index) => <Color key={`color-${index}`} index={index} update={this.updateColor.bind(this)} hexCode={color.hexCode}></Color>) }
+      </div>
       </div>
     )
   }

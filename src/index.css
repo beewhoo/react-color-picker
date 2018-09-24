@@ -1,4 +1,4 @@
-*, *:after, *:before {
+* {
   box-sizing: border-box;
 }
 
@@ -8,12 +8,12 @@
 
 .color {
   flex-basis: 50%;
-  height: 100vh;
+  height:100vh;
   cursor: pointer;
   position: relative;
 }
 
-.color__code {
+.colorcode {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -29,11 +29,21 @@
   z-index: 1;
 }
 
-.color__code::-moz-selection {
+.header {
+  position:absolute;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  z-index: 1000;
+  color:white;
+}
+
+.colorcode::-moz-selection {
   background-color: transparent;
 }
 
-.color__code::selection {
+.colorcode::selection {
   background-color: transparent;
 }
 
@@ -43,6 +53,6 @@
   }
 
   .color {
-    height: 50vh;
+    height: 25vh;
   }
 }

@@ -8,7 +8,7 @@ class Color extends React.Component {
     }
     return (
       <div className="color" onClick={this.props.update.bind(this, this.props.index)} style={style}>
-        <p className="color__code">{this.props.hexCode}</p>
+        <p className="colorcode">{this.props.hexCode}</p>
       </div>
     );
   }
